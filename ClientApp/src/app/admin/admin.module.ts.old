@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { AdminRoutingModule } from './admin-routing.module';
+import { ListComponent } from './list/list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MaterialModule } from '../material-module';
+
+
+@NgModule({
+    declarations: [ListComponent, ProfileComponent],
+    imports: [
+        CommonModule,
+        AdminRoutingModule,
+        MaterialModule
+    ],
+    providers: []
+})
+export class AdminModule { }
