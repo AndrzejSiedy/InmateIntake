@@ -26,7 +26,7 @@
                 <input matInput placeholder="Nationality" [(ngModel)]="inmate.nationality">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Cell number" [(ngModel)]="inmate.cellNumber">
+                <input matInput type="number" min="1" max="10" placeholder="Cell number" [(ngModel)]="inmate.cellNumber">
             </mat-form-field>
             <mat-form-field>
                 <mat-select placeholder="Gender" [(ngModel)]="inmate.gender">
