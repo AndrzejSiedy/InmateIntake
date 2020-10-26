@@ -12,8 +12,8 @@ import { FormControl } from '@angular/forms';
 export class ProfileComponent implements OnInit {
 
     private backupInmate: Inmate;
-    private isCreate = false;
-    private isEdit = true;
+    public isCreate = false;
+    public isEdit = true;
 
     inmate: Inmate = <Inmate>{};
     locations: string[];
